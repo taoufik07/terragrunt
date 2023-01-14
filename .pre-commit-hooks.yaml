@@ -2,7 +2,7 @@
   name: Terragrunt hclfmt
   description: Rewrites all Terragrunt configuration files to a canonical format
   entry: terragrunt hclfmt
-  language: go
+  language: golang
   files: \.hcl$
   exclude: >
     (?x)^(
