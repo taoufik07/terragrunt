@@ -1,0 +1,11 @@
+- id: hclfmt
+  name: Terragrunt hclfmt
+  description: Rewrites all Terragrunt configuration files to a canonical format
+  entry: terragrunt hclfmt
+  language: go
+  files: \.hcl$
+  exclude: >
+    (?x)^(
+      .+\.terraform\/.*$|
+      .+\.terragrunt-cache\/.*$|
+    )$
